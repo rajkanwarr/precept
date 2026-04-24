@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precept - Making Invisible Resource Use Perceptible</title>
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Section 0: Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">Precept</div>
+    <div class="nav-center">
+      <a href="#" class="active">Home</a>
+      <a href="#">How It Works</a>
+      <a href="#">For You</a>
+    </div>
+    <div class="nav-right">
+      <button class="btn btn-cta" onclick="window.location.href='dashboard.html'">Dashboard &rarr;</button>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="sdg-badge-hero">
+          <span class="dot">&bull;</span> Aligned with UN SDG 12.2
+        </div>
+        <h1 class="hero-headline">
+          Making Invisible Resource Use <span class="italic-highlight">Perceptible</span>
+        </h1>
+        <p class="hero-sub">
+          Real-time feedback for sustainable resource efficiency &mdash; turning awareness into automatic, measurable action.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">Get Started</button>
+          <button class="btn btn-outline">See How It Works</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="floating-frame">
+          <div class="browser-top">
+            <div class="browser-dots">
+              <div class="dot-btn"></div><div class="dot-btn"></div><div class="dot-btn"></div>
+            </div>
+            <div class="browser-url">app.precept.io</div>
+            <div class="browser-empty"></div>
+          </div>
+          <div class="browser-content">
+            <div class="meter-row">
+              <div class="meter-card">
+                <div class="meter-label">WATER USAGE</div>
+                <div class="meter-val">142</div>
+                <div class="meter-bar-wrap"><div class="meter-bar water" style="width: 55%"></div></div>
+              </div>
+              <div class="meter-card">
+                <div class="meter-label">ENERGY</div>
+                <div class="meter-val">3.8</div>
+                <div class="meter-bar-wrap"><div class="meter-bar energy" style="width: 78%"></div></div>
+              </div>
+              <div class="meter-card">
+                <div class="meter-label">GAS</div>
+                <div class="meter-val">0.4</div>
+                <div class="meter-bar-wrap"><div class="meter-bar gas" style="width: 32%"></div></div>
+              </div>
+            </div>
+            <div class="alert-strip">
+              <div class="amber-dot"></div>
+              <span>Energy spike detected at 10:42am</span>
+            </div>
+            <div class="rec-pill">
+              <div class="green-dot"></div>
+              <span>Reduce peak-hour usage &middot; save 12%</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-caption">Live resource monitoring dashboard</div>
+        <div class="hero-blob"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Problem -->
+  <section class="problem-section">
+    <div class="problem-container">
+      <div class="section-tag">The Problem</div>
+      <h2 class="section-heading">Waste happens in the gap between action and consequence</h2>
+      <p class="section-sub">
+        Most resource inefficiency is not intentional. It happens because consumption is invisible at the moment decisions are made.
+      </p>
+      
+      <div class="problem-grid">
+        <div class="stat-cards">
+          <div class="stat-card">
+            <div class="stat-val">30%</div>
+            <div class="stat-desc">of industrial energy is wasted due to invisible inefficiencies in real-time operations</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val">40%</div>
+            <div class="stat-desc">of household water waste occurs without the user ever noticing the behaviour</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val">$1.3T</div>
+            <div class="stat-desc">in annual economic loss globally attributable to avoidable resource waste across sectors</div>
+          </div>
+        </div>
+        
+        <div class="perception-gap-card">
+          <div class="gap-title">The Perception Gap</div>
+          
+          <div class="flow-row">
+            <div class="flow-box">Action / Decision</div>
+            <div class="flow-line"><div class="flow-pill">Invisible</div></div>
+            <div class="flow-box">Resource Use</div>
+          </div>
+          
+          <div class="flow-row">
+            <div class="flow-box">Resource Use</div>
+            <div class="flow-line"><div class="flow-pill">No Feedback</div></div>
+            <div class="flow-box">Waste Occurs</div>
+          </div>
+          
+          <div class="flow-row">
+            <div class="flow-box">Waste Occurs</div>
+            <div class="flow-line"><div class="flow-pill">Delayed Awareness</div></div>
+            <div class="flow-box">Too Late</div>
+          </div>
+          
+          <div class="gap-note">Precept closes this gap.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Solution -->
+  <section class="solution-section">
+    <div class="solution-container">
+      <div class="section-tag">Our Solution</div>
+      <h2 class="section-heading">The missing perceptual layer between people and resources</h2>
+      <p class="section-sub">
+        Precept embeds sensory feedback directly into human-resource interactions &mdash; making waste visible before it happens.
+      </p>
+      
+      <div class="solution-grid">
+        <div class="sol-card">
+          <div class="sol-icon">&#127807;</div>
+          <div class="sol-title">Feedback Interface Technology</div>
+          <div class="sol-body">Embedded perceptual signals convert invisible resource data into real-time human-sensory feedback at the point of interaction.</div>
+        </div>
+        <div class="sol-card">
+          <div class="sol-icon">&#128225;</div>
+          <div class="sol-title">Sensor & IoT Layer</div>
+          <div class="sol-body">Distributed sensors monitor water, energy, and resource flows across environments &mdash; feeding live data into the Precept platform.</div>
+        </div>
+        <div class="sol-card">
+          <div class="sol-icon">&#128200;</div>
+          <div class="sol-title">Behavioral Optimization</div>
+          <div class="sol-body">Machine learning models analyze usage patterns and generate personalized adaptive recommendations that improve over time.</div>
+        </div>
+      </div>
+      
+      <div class="connector-strip">
+        <div class="conn-line"></div>
+        <div class="conn-item"><div class="conn-circle" style="background:var(--green-tint)">&#128065;</div><div class="conn-label">Sense</div></div>
+        <div class="conn-item"><div class="conn-circle" style="background:#fff">&#129504;</div><div class="conn-label">Interpret</div></div>
+        <div class="conn-item"><div class="conn-circle" style="background:var(--green-tint)">&#128172;</div><div class="conn-label">Feedback</div></div>
+        <div class="conn-item"><div class="conn-circle" style="background:#fff">&#128257;</div><div class="conn-label">Adapt</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Product Walkthrough -->
+  <section class="product-section">
+    <div class="prod-intro">
+      <div class="section-tag">The Product</div>
+      <h2 class="section-heading">See Precept in action</h2>
+      <p class="section-sub">
+        A real-time feedback interface built for every scale &mdash; from a family home to a municipal water system.
+      </p>
+    </div>
+    
+    <div class="main-browser-frame">
+      <div class="main-browser-top">
+        <div class="browser-dots">
+          <div class="dot-btn"></div><div class="dot-btn"></div><div class="dot-btn"></div>
+        </div>
+        <div class="main-url">app.precept.io/overview</div>
+        <div class="main-wordmark">Precept</div>
+      </div>
+      <div class="main-screen-content">
+        <div class="db-sidebar"></div>
+        <div class="db-main">
+          <div class="db-header"></div>
+          <div class="db-cards">
+            <div class="db-card"></div><div class="db-card"></div><div class="db-card"></div>
+          </div>
+          <div class="db-panels">
+            <div class="db-panel-1"></div><div class="db-panel-2"></div><div class="db-panel-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="walkthrough-strip">
+      <div class="walk-step">
+        <div class="step-header">
+          <div class="step-icon"></div>
+          <div class="step-num">01</div>
+        </div>
+        <div class="step-title">Install & Connect</div>
+        <div class="step-body">Precept sensors are installed at resource touchpoints. Setup takes under 30 minutes with zero infrastructure changes.</div>
+      </div>
+      <div class="walk-step">
+        <div class="step-header">
+          <div class="step-icon"></div>
+          <div class="step-num">02</div>
+        </div>
+        <div class="step-title">Receive Feedback</div>
+        <div class="step-body">Real-time perceptual signals are delivered through the dashboard, mobile app, or ambient device interface the moment usage changes.</div>
+      </div>
+      <div class="walk-step">
+        <div class="step-header">
+          <div class="step-icon"></div>
+          <div class="step-num">03</div>
+        </div>
+        <div class="step-title">Reduce & Report</div>
+        <div class="step-body">Users naturally adapt. Precept tracks savings, generates reports, and scores your SDG 12.2 progress automatically.</div>
+      </div>
+    </div>
+    
+    <div class="trust-strip">
+      <div class="trust-label">Trusted for deployment across</div>
+      <div class="trust-pills">
+        <div class="trust-pill">Households</div>
+        <div class="trust-pill">Institutions</div>
+        <div class="trust-pill">Industry</div>
+        <div class="trust-pill">Agriculture</div>
+        <div class="trust-pill">Municipalities</div>
+        <div class="trust-pill gold">UN SDG 12.2 &check;</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Segments -->
+  <section class="segments-section">
+    <div class="segments-container">
+      <div class="section-tag">Who We Serve</div>
+      <h2 class="section-heading">Built for every scale of resource use</h2>
+      <p class="section-sub">
+        Whether you manage a home or a city, Precept adapts to your environment and usage context.
+      </p>
+      
+      <div class="tabs">
+        <button class="tab active">Households</button>
+        <button class="tab">Institutions</button>
+        <button class="tab">Industry</button>
+        <button class="tab">Agriculture</button>
+        <button class="tab">Government</button>
+      </div>
+      
+      <div class="tab-content">
+        <div class="tab-left">
+          <div class="tab-left-heading">The household gap</div>
+          <div class="tab-left-body">
+            Families make dozens of resource decisions daily without knowing their real-time impact. Water left running, heating left on &mdash; invisible until the bill arrives.
+          </div>
+          <div class="tab-left-callout">Precept makes every decision visible, instantly.</div>
+        </div>
+        <div class="tab-right">
+          <div class="metric-cards">
+            <div class="metric-card">
+              <div class="metric-label">Avg. monthly waste reduction</div>
+              <div class="metric-val">28%</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Payback period</div>
+              <div class="metric-val">&lt; 6 months</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">SDG 12.2 alignment</div>
+              <div class="metric-val">Verified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: How It Works -->
+  <section class="how-section">
+    <div class="how-container">
+      <div class="section-tag">How It Works</div>
+      <h2 class="section-heading">Three steps to automatic efficiency</h2>
+      <p class="section-sub">
+        Precept integrates into your existing environment with minimal setup and begins delivering feedback immediately.
+      </p>
+      
+      <div class="steps-visual">
+        <div class="step-connector"></div>
+        <div class="step-item">
+          <div class="step-circle">1</div>
+          <div class="step-item-title">Sense</div>
+          <div class="step-item-body">Precept sensors and IoT devices monitor resource flows &mdash; water, energy, and more &mdash; in real time across your environment.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-circle">2</div>
+          <div class="step-item-title">Feedback</div>
+          <div class="step-item-body">Data is instantly translated into perceptible signals &mdash; visual, ambient, or device-integrated &mdash; delivered at the exact moment of decision.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-circle">3</div>
+          <div class="step-item-title">Adapt</div>
+          <div class="step-item-body">Users naturally adjust behaviour in response. The system learns, personalises, and continuously optimises recommendations over time.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: CTA Footer -->
+  <footer class="footer-section">
+    <h2 class="footer-heading">Ready to make resource use visible?</h2>
+    <p class="footer-sub">Join institutions, households, and enterprises already reducing waste with Precept.</p>
+    
+    <div class="hero-buttons" style="justify-content: center;">
+      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-outline">Request a Demo</button>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-logo">Precept</div>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">How It Works</a>
+        <a href="#">For You</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-badge">UN SDG 12.2 Aligned</div>
+    </div>
+  </footer>
+
+
+<script>
+  // Segments tab switching
+  const tabs = document.querySelectorAll('.tab');
+  const tabContent = {
+    Households: {
+      heading: 'The household gap',
+      body: 'Families make dozens of resource decisions daily without knowing their real-time impact. Water left running, heating left on — invisible until the bill arrives.',
+      callout: 'Precept makes every decision visible, instantly.'
+    },
+    Institutions: {
+      heading: 'The institutional gap',
+      body: 'Schools and commercial buildings waste energy continuously through unoccupied rooms, legacy equipment, and unmeasured consumption.',
+      callout: 'Precept turns every classroom and corridor into a monitored resource zone.'
+    },
+    Industry: {
+      heading: 'The industrial gap',
+      body: 'Industrial operations lose significant margins to undetected inefficiencies in machinery, water use, and energy loads.',
+      callout: 'Precept delivers plant-level visibility with zero downtime.'
+    },
+    Agriculture: {
+      heading: 'The agricultural gap',
+      body: 'Water and soil resource management in agriculture is frequently reactive, not proactive — Precept changes that.',
+      callout: 'Precept makes every irrigation decision data-driven.'
+    },
+    Government: {
+      heading: 'The municipal gap',
+      body: 'Municipalities managing utilities and public infrastructure need real-time visibility to meet sustainability targets and reduce operating costs.',
+      callout: 'Precept powers city-wide SDG 12.2 compliance dashboards.'
+    }
+  };
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const key = tab.textContent.trim();
+      const content = tabContent[key];
+      if (content) {
+        document.querySelector('.tab-left-heading').textContent = content.heading;
+        document.querySelector('.tab-left-body').textContent = content.body;
+        document.querySelector('.tab-left-callout').textContent = content.callout;
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400;1,9..40,500&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+:root {
+  /* Colors */
+  --bg-primary: #F6F1E7;
+  --bg-secondary: #EDE6D6;
+  --deep-forest-green: #1F3D20;
+  --mid-green: #2E6B30;
+  --light-green: #4E9B52;
+  --muted-green: #7BB87E;
+  --pale-green: #C8DEC9;
+  --green-tint: #EBF4EB;
+  --sand-gold: #C4A46B;
+  --text-primary: #1A2B1A;
+  --text-secondary: #4A5E4A;
+  --text-muted: #7A8E7A;
+  --white-card: #FDFAF4;
+  --alert-amber: #C47A1E;
+  --alert-bg: #FEF4E4;
+  --border-light: #D4C9B0;
+  --border-dark: rgba(78,155,82,0.3);
+
+  /* Typography */
+  --font-heading: 'Lora', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-data: 'DM Mono', 'DM Sans', monospace;
+
+  /* Spacing */
+  --base-unit: 8px;
+  --gap-inner-sm: 12px;
+  --gap-inner-md: 16px;
+  --padding-card: 24px;
+  --padding-section-y: 72px;
+  --padding-section-x: 48px;
+
+  /* Borders & Radius */
+  --radius-btn: 6px;
+  --radius-card: 12px;
+  --radius-pill: 20px;
+  --radius-circle: 50%;
+}
+
+/* Global Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+}
+
+/* Typography Utilities */
+.text-display { font-family: var(--font-heading); font-weight: 600; }
+.text-display-italic { font-family: var(--font-heading); font-weight: 400; font-style: italic; }
+.text-body-light { font-family: var(--font-body); font-weight: 300; }
+.text-body-regular { font-family: var(--font-body); font-weight: 400; }
+.text-body-medium { font-family: var(--font-body); font-weight: 500; }
+.text-data { font-family: var(--font-data); }
+
+/* Spacing Utilities */
+.section-padding {
+  padding: var(--padding-section-y) var(--padding-section-x);
+}
+
+.card-padding {
+  padding: var(--padding-card);
+}
+
+/* Border Utilities */
+.border-light {
+  border: 1px solid var(--border-light);
+}
+
+.border-dark {
+  border: 1px solid var(--border-dark);
+}
+
+/* Base Component Classes */
+.btn {
+  border-radius: var(--radius-btn);
+  font-family: var(--font-body);
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.card {
+  border-radius: var(--radius-card);
+  background-color: var(--white-card);
+  border: 1px solid var(--border-light);
+  padding: var(--padding-card);
+}
+
+.card-dark {
+  border-radius: var(--radius-card);
+  background-color: var(--deep-forest-green);
+  border: 1px solid var(--border-dark);
+  padding: var(--padding-card);
+}
+
+.pill {
+  border-radius: var(--radius-pill);
+}
+
+.circle {
+  border-radius: var(--radius-circle);
+}

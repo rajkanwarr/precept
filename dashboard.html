@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precept — Dashboard</title>
+  <meta name="description" content="Precept real-time resource feedback dashboard. Monitor water, energy, and gas usage live.">
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="dashboard-root">
+
+  <!-- ═══════════════════════════════
+       SIDEBAR
+  ════════════════════════════════ -->
+  <aside class="db-sidebar-full">
+
+    <!-- Logo -->
+    <div class="sidebar-logo">Precept</div>
+
+    <!-- Navigation -->
+    <nav class="sidebar-nav">
+      <a class="nav-item active" href="#">
+        <span class="nav-icon">⊙</span>
+        Overview
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon">📊</span>
+        Usage Analytics
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon">⚡</span>
+        Action Plan
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon">📄</span>
+        Reports
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon">⚙</span>
+        Settings
+      </a>
+    </nav>
+
+    <!-- Back to Site -->
+    <a class="back-to-site" href="index.html">← Back to Site</a>
+
+    <!-- User block -->
+    <div class="sidebar-user">
+      <div class="user-avatar">JD</div>
+      <div class="user-info">
+        <div class="user-name">Jordan Dhir</div>
+        <div class="user-plan">Household Plan</div>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ═══════════════════════════════
+       MAIN CONTENT
+  ════════════════════════════════ -->
+  <main class="db-main-content">
+
+    <!-- Header Row -->
+    <div class="db-header-row">
+      <div class="db-left">
+        <div class="db-greeting">Good morning, Jordan</div>
+        <div class="db-date">
+          <span class="live-dot"></span>
+          Thursday, 24 April 2026 &middot; Live monitoring active
+        </div>
+      </div>
+      <div class="db-header-actions">
+        <button class="bell-btn" id="bell-btn" title="View alerts">
+          🔔
+          <div class="bell-dot"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Resource Meters Row -->
+    <div class="meters-row">
+
+      <!-- Water Usage -->
+      <div class="meter-card-full">
+        <div class="meter-header">
+          <div class="meter-card-label">Water Usage</div>
+          <div class="status-badge badge-normal">Normal</div>
+        </div>
+        <div class="meter-value">142</div>
+        <div class="meter-unit">litres today</div>
+        <div class="meter-bar-full-wrap">
+          <div class="meter-bar-fill fill-green" style="width: 55%"></div>
+        </div>
+        <div class="meter-sub">55% of daily baseline</div>
+      </div>
+
+      <!-- Energy Usage -->
+      <div class="meter-card-full">
+        <div class="meter-header">
+          <div class="meter-card-label">Energy Usage</div>
+          <div class="status-badge badge-elevated">Elevated</div>
+        </div>
+        <div class="meter-value">3.8</div>
+        <div class="meter-unit">kWh today</div>
+        <div class="meter-bar-full-wrap">
+          <div class="meter-bar-fill fill-amber" style="width: 78%"></div>
+        </div>
+        <div class="meter-sub">78% of daily baseline — peak detected</div>
+      </div>
+
+      <!-- Gas Usage -->
+      <div class="meter-card-full">
+        <div class="meter-header">
+          <div class="meter-card-label">Gas Usage</div>
+          <div class="status-badge badge-normal">Normal</div>
+        </div>
+        <div class="meter-value">0.4</div>
+        <div class="meter-unit">m³ today</div>
+        <div class="meter-bar-full-wrap">
+          <div class="meter-bar-fill fill-green" style="width: 32%"></div>
+        </div>
+        <div class="meter-sub">32% of daily baseline</div>
+      </div>
+
+    </div>
+
+    <!-- Lower Grid -->
+    <div class="lower-grid">
+
+      <!-- Panel A: Savings Summary -->
+      <div class="panel-savings">
+        <div class="panel-label">Monthly Savings</div>
+        <div class="savings-amount">₹2,840</div>
+        <div class="savings-unit">saved this month</div>
+        <div class="savings-compare">vs. <span>₹4,100</span> last month baseline</div>
+
+        <hr class="panel-divider">
+
+        <div class="sdg-score-label">SDG Impact Score</div>
+        <div class="sdg-score-row">
+          <div class="sdg-score-val">72</div>
+          <div class="sdg-score-denom">/100</div>
+          <div class="sdg-progress-wrap">
+            <div class="sdg-progress-fill" style="width: 72%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel B: Real-time Alerts -->
+      <div class="panel-alerts">
+        <div class="panel-title-row">
+          <div class="panel-title">Alerts</div>
+          <a class="panel-link" href="#">View all</a>
+        </div>
+        <div class="alert-list">
+          <div class="alert-item">
+            <div class="alert-dot dot-amber"></div>
+            <div>
+              <div class="alert-text">Energy usage spike detected — 78% of daily limit at 10:42am</div>
+              <div class="alert-time">2 min ago</div>
+            </div>
+          </div>
+          <div class="alert-item">
+            <div class="alert-dot dot-green"></div>
+            <div>
+              <div class="alert-text">Water usage returned to normal range after feedback intervention</div>
+              <div class="alert-time">14 min ago</div>
+            </div>
+          </div>
+          <div class="alert-item">
+            <div class="alert-dot dot-muted"></div>
+            <div>
+              <div class="alert-text">Weekly sustainability report ready to view</div>
+              <div class="alert-time">1 hr ago</div>
+            </div>
+          </div>
+          <div class="alert-item">
+            <div class="alert-dot dot-green"></div>
+            <div>
+              <div class="alert-text">Gas consumption 32% below baseline — on track for monthly target</div>
+              <div class="alert-time">3 hrs ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel C: Recommendations -->
+      <div class="panel-recs">
+        <div class="panel-title-row">
+          <div class="panel-title">Recommendations</div>
+          <a class="panel-link" href="#">See all →</a>
+        </div>
+        <div class="rec-list">
+
+          <!-- Rec 1 -->
+          <div class="rec-item">
+            <div class="rec-icon-box">⚡</div>
+            <div class="rec-body">
+              <div class="rec-title">Reduce peak-hour energy use</div>
+              <div class="rec-desc">Shifting heavy appliance use by 2 hours could reduce your energy cost by 12% this week.</div>
+              <div class="rec-tag">Energy · High impact</div>
+            </div>
+          </div>
+
+          <!-- Rec 2 -->
+          <div class="rec-item">
+            <div class="rec-icon-box">💧</div>
+            <div class="rec-body">
+              <div class="rec-title">Morning shower duration</div>
+              <div class="rec-desc">Reducing shower time by 2 minutes would save approximately 18 litres per day based on your current pattern.</div>
+              <div class="rec-tag water">Water · Medium impact</div>
+            </div>
+          </div>
+
+          <!-- Rec 3 -->
+          <div class="rec-item">
+            <div class="rec-icon-box">🌿</div>
+            <div class="rec-body">
+              <div class="rec-title">Heating schedule optimisation</div>
+              <div class="rec-desc">Your heating runs 40 minutes before occupancy. A 20-minute delay would have no comfort impact and reduce gas use.</div>
+              <div class="rec-tag gas">Gas · High impact</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /lower-grid -->
+
+  </main>
+  <!-- /db-main-content -->
+
+</div>
+<!-- /dashboard-root -->
+
+<script>
+  // Tab switching (Segments section mirrored on landing page)
+  // Nav active state
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Wire Dashboard → button on landing page to this file
+  // (handled in index.html)
+</script>
+</body>
+</html>
